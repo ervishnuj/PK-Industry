@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PK INDUSTRY PVT. LTD. | Solar & Wind Energy Solutions</title>
+  <meta name="description" content="PK Industry Pvt. Ltd. - Leading Solar Rooftop, Industrial Solar, Wind & Hybrid Energy Solutions in Madurai, Tamil Nadu. Get subsidy-backed pricing & free consultation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #0d9488;
+      --primary-dark: #0f766e;
+      --primary-light: #14b8a6;
+      --accent: #f59e0b;
+      --accent-dark: #d97706;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --gradient: linear-gradient(135deg, #0d9488 0%, #0f766e 50%, #134e4a 100%);
+      --shadow: 0 10px 40px rgba(13, 148, 136, 0.15);
+      --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ========== NAVBAR ========== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+      background: transparent;
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 0.7rem 0;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--white);
+      transition: color 0.3s;
+    }
+
+    .navbar.scrolled .logo {
+      color: var(--dark);
+    }
+
+    .logo i {
+      font-size: 1.8rem;
+      color: var(--accent);
+    }
+
+    .logo span {
+      color: var(--primary-light);
+    }
+
+    .navbar.scrolled .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .navbar.scrolled .nav-links a {
+      color: var(--dark);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--dark) !important;
+      padding: 0.55rem 1.3rem;
+      border-radius: 50px;
+      font-weight: 600 !important;
+      transition: all 0.3s !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      width: 26px;
+      height: 3px;
+      background: var(--white);
+      border-radius: 3px;
+      transition: all 0.3s;
+    }
+
+    .navbar.scrolled .hamburger span {
+      background: var(--dark);
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      min-height: 100vh;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 6rem 0 4rem;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -15%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.2) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-content h1 span {
+      color: var(--accent);
+    }
+
+    .hero-content p {
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .stat-item h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .stat-item p {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 24px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-card h3 {
+      color: var(--white);
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .hero-card h3 i {
+      color: var(--accent);
+    }
+
+    .price-preview {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .price-preview .label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .price-preview .value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .price-preview .sub {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* ========== SECTIONS COMMON ========== */
+    section {
+      padding: 5rem 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header .badge {
+      display: inline-block;
+      background: rgba(13, 148, 136, 0.1);
+      color: var(--primary);
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 0.8rem;
+    }
+
+    .section-header p {
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    /* ========== ABOUT ========== */
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-content h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+
+    .about-content p {
+      color: var(--gray);
+      margin-bottom: 1.2rem;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .feature-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      background: var(--white);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    }
+
+    .feature-box i {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-top: 2px;
+    }
+
+    .feature-box h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .feature-box p {
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin: 0;
+    }
+
+    .about-image {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 420px;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image-inner {
+      text-align: center;
+      color: var(--white);
+      padding: 2rem;
+    }
+
+    .about-image-inner i {
+      font-size: 5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .about-image-inner h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ========== SERVICES ========== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+      transition: all 0.35s ease;
+      border: 1px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transition: transform 0.35s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+      border-color: rgba(13, 148, 136, 0.15);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(13, 148, 136, 0.1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      color: var(--primary);
+      margin-bottom: 1.3rem;
+      transition: all 0.3s;
+    }
+
+    .service-card:hover .service-icon {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+    }
+
+    .service-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .service-card ul {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card ul li {
+      font-size: 0.9rem;
+      color: var(--gray);
+      padding: 0.3rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .service-card ul li i {
+      color: var(--primary);
+      font-size: 0.8rem;
+    }
+
+    .service-link {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.3s;
+    }
+
+    .service-link:hover {
+      gap: 0.7rem;
+    }
+
+    /* ========== PRICING ========== */
+    .pricing {
+      background: var(--light);
+    }
+
+    .pricing-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 0.7rem 1.5rem;
+      border-radius: 50px;
+      border: 2px solid #e2e8f0;
+      background: var(--white);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: var(--gray);
+    }
+
+    .tab-btn.active,
+    .tab-btn:hover {
+      background: var(--primary);
+      color: var(--white);
+      border-color: var(--primary);
+    }
+
+    .pricing-table-wrap {
+      overflow-x: auto;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      background: var(--white);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+    }
+
+    thead {
+      background: var(--gradient);
+      color: var(--white);
+    }
+
+    th {
+      padding: 1.1rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.92rem;
+    }
+
+    tbody tr:hover {
+      background: rgba(13, 148, 136, 0.04);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .price-highlight {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .pricing-note {
+      margin-top: 1.5rem;
+      text-align: center;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .industrial-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .ind-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.8rem;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s;
+    }
+
+    .ind-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .ind-card .kw {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .ind-card .range {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+
+    .ind-card .label {
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+
+    .hybrid-box {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin-top: 1rem;
+    }
+
+    .hybrid-box h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary);
+    }
+
+    .hybrid-box p {
+      color: var(--gray);
+      margin-bottom: 0.8rem;
+    }
+
+    .hybrid-box .start-price {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+    }
+
+    /* ========== WHY US ========== */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .why-card {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+      background: var(--white);
+      transition: all 0.3s;
+    }
+
+    .why-card:hover {
+      background: var(--light);
+    }
+
+    .why-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 1.2rem;
+      background: rgba(13, 148, 136, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    .why-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .why-card p {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    /* ========== CTA ========== */
+    .cta {
+      background: var(--gradient);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .cta p {
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 550px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+
+    .cta .btn-primary {
+      position: relative;
+    }
+
+    /* ========== CONTACT ========== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+    }
+
+    .contact-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      color: var(--gray);
+      margin-bottom: 1.8rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item .icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(13, 148, 136, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .contact-item h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-item p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin: 0;
+    }
+
+    .contact-form {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.3s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 1rem;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .form-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(13, 148, 136, 0.3);
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: var(--dark);
+      color: rgba(255, 255, 255, 0.8);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand .logo {
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem;
+      max-width: 280px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col ul li a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* ========== FLOATING WHATSAPP ========== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #25d366;
+      color: white;
+      padding: 0.85rem 1.3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+      transition: all 0.3s;
+      animation: pulse-wa 2s infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 35px rgba(37, 211, 102, 0.55);
+    }
+
+    .whatsapp-float i {
+      font-size: 1.6rem;
+    }
+
+    .whatsapp-float .wa-text {
+      display: inline;
+    }
+
+    @keyframes pulse-wa {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* ========== MOBILE ========== */
+    @media (max-width: 992px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-content p {
+        margin: 0 auto 2rem;
+      }
+
+      .hero-btns {
+        justify-content: center;
+      }
+
+      .hero-stats {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        display: none;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        gap: 1.5rem;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        transition: right 0.35s ease;
+      }
+
+      .nav-links.open {
+        right: 0;
+      }
+
+      .nav-links a {
+        color: var(--dark) !important;
+        font-size: 1.1rem;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .section-header h2 {
+        font-size: 1.8rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .whatsapp-float .wa-text {
+        display: none;
+      }
+
+      .whatsapp-float {
+        padding: 0.9rem;
+        border-radius: 50%;
+      }
+
+      .about-features {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Tab content hide */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <i class="fas fa-solar-panel"></i>
+        PK <span>INDUSTRY</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Power Your Future with <span>Clean Energy</span></h1>
+        <p>PK Industry Pvt. Ltd. delivers high-quality Solar Rooftop, Industrial Solar, Wind & Hybrid systems across Tamil Nadu. Enjoy government subsidies and long-term savings.</p>
+        <div class="hero-btns">
+          <a href="#pricing" class="btn btn-primary"><i class="fas fa-tags"></i> View Pricing</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Free Consultation</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Installations</p>
+          </div>
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Subsidy Support</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <h3><i class="fas fa-bolt"></i> Starting From</h3>
+          <div class="price-preview">
+            <div class="label">1 kW Residential (After Subsidy)</div>
+            <div class="value">₹42,500 – ₹55,000</div>
+            <div class="sub">Central + State Subsidy Applied</div>
+          </div>
+          <div class="price-preview">
+            <div class="label">3 kW Residential (After Subsidy)</div>
+            <div class="value">₹80,000 – ₹1,20,000</div>
+            <div class="sub">Best value for average homes</div>
+          </div>
+          <a href="https://wa.me/918015649004?text=Hi%20PK%20Industry%2C%20I%20want%20a%20solar%20quote" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem;">
+            <i class="fab fa-whatsapp"></i> Chat for Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Who We Are</div>
+        <h2>About PK Industry Pvt. Ltd.</h2>
+        <p>Your trusted partner for Solar & Wind energy solutions in Madurai and across Tamil Nadu.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>Empowering Homes & Industries with Clean Power</h3>
+          <p>PK Industry Pvt. Ltd. specialises in the design, supply, installation and commissioning of Solar Rooftop systems, Industrial & Commercial solar plants, Wind turbines and Solar-Wind Hybrid solutions.</p>
+          <p>We handle end-to-end project execution — from site survey and subsidy documentation (PM Surya Ghar + Tamil Nadu state subsidy) to net-metering with TANGEDCO/TNPDCL and after-sales service.</p>
+          <div class="about-features">
+            <div class="feature-box">
+              <i class="fas fa-certificate"></i>
+              <div>
+                <h4>Certified Installers</h4>
+                <p>MNRE & TEDA approved</p>
+              </div>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-hand-holding-usd"></i>
+              <div>
+                <h4>Subsidy Assistance</h4>
+                <p>Full support for claims</p>
+              </div>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-tools"></i>
+              <div>
+                <h4>Quality Components</h4>
+                <p>Tier-1 panels & inverters</p>
+              </div>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-headset"></i>
+              <div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated service team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-image-inner">
+            <i class="fas fa-sun"></i>
+            <h3>Clean Energy Experts</h3>
+            <p>Solar • Wind • Hybrid<br>Residential • Commercial • Industrial</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">What We Offer</div>
+        <h2>Our Energy Solutions</h2>
+        <p>Complete range of renewable energy systems tailored for homes, businesses and industries.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-home"></i></div>
+          <h3>Residential Solar Rooftop</h3>
+          <p>Grid-tied & hybrid rooftop systems for homes up to 10 kW with net-metering support.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> 1 kW – 10 kW systems</li>
+            <li><i class="fas fa-check"></i> PM Surya Ghar subsidy</li>
+            <li><i class="fas fa-check"></i> Tamil Nadu state subsidy</li>
+            <li><i class="fas fa-check"></i> TANGEDCO net-metering</li>
+          </ul>
+          <a href="#pricing" class="service-link">View Pricing <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-industry"></i></div>
+          <h3>Industrial & Commercial</h3>
+          <p>Large-scale rooftop and ground-mounted solar plants for factories, warehouses & offices.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> 5 kW to multi-MW</li>
+            <li><i class="fas fa-check"></i> Captive & open access</li>
+            <li><i class="fas fa-check"></i> High-efficiency modules</li>
+            <li><i class="fas fa-check"></i> ROI in 3.5–5 years</li>
+          </ul>
+          <a href="#pricing" class="service-link">View Pricing <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-wind"></i></div>
+          <h3>Wind Energy Systems</h3>
+          <p>Standalone small wind and commercial wind solutions for suitable high-wind locations.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Site assessment</li>
+            <li><i class="fas fa-check"></i> Micro & small turbines</li>
+            <li><i class="fas fa-check"></i> Grid interconnection</li>
+            <li><i class="fas fa-check"></i> Custom engineering</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-solar-panel"></i></div>
+          <h3>Solar-Wind Hybrid</h3>
+          <p>Combined solar + micro-wind systems with optional battery storage for higher reliability.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Day + night generation</li>
+            <li><i class="fas fa-check"></i> Battery backup options</li>
+            <li><i class="fas fa-check"></i> Bespoke design</li>
+            <li><i class="fas fa-check"></i> Commercial packages</li>
+          </ul>
+          <a href="#pricing" class="service-link">View Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Transparent Rates</div>
+        <h2>Our Pricing</h2>
+        <p>Indicative market prices based on Tamil Nadu Solar Rooftop Portal & local standards. Final quote after site survey.</p>
+      </div>
+
+      <div class="pricing-tabs">
+        <button class="tab-btn active" data-tab="residential">Residential Solar</button>
+        <button class="tab-btn" data-tab="industrial">Industrial & Commercial</button>
+        <button class="tab-btn" data-tab="hybrid">Wind & Hybrid</button>
+      </div>
+
+      <!-- Residential -->
+      <div class="tab-content active" id="residential">
+        <div class="pricing-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>System Capacity</th>
+                <th>Indicative Market Price<br>(Before Subsidy)</th>
+                <th>Central Subsidy<br>(PM Surya Ghar)</th>
+                <th>Tamil Nadu<br>State Subsidy</th>
+                <th>Estimated Consumer<br>Contribution (After Subsidy)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1 kW</strong></td>
+                <td>₹70,000 – ₹85,000</td>
+                <td>₹30,000</td>
+                <td>₹5,000</td>
+                <td class="price-highlight">₹42,500 – ₹55,000</td>
+              </tr>
+              <tr>
+                <td><strong>2 kW</strong></td>
+                <td>₹1,30,000 – ₹1,55,000</td>
+                <td>₹60,000</td>
+                <td>₹10,000</td>
+                <td class="price-highlight">₹60,000 – ₹85,000</td>
+              </tr>
+              <tr>
+                <td><strong>3 kW</strong></td>
+                <td>₹1,80,000 – ₹2,20,000</td>
+                <td>₹78,000</td>
+                <td>₹22,000</td>
+                <td class="price-highlight">₹80,000 – ₹1,20,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pricing-note">
+          <i class="fas fa-info-circle"></i> Combined central (PM Surya Ghar) & state assistance apply to household installations up to 3 kW. Net-metering support via TANGEDCO/TNPDCL available up to 10 kW.
+        </p>
+      </div>
+
+      <!-- Industrial -->
+      <div class="tab-content" id="industrial">
+        <div class="industrial-cards">
+          <div class="ind-card">
+            <div class="kw">1 kW</div>
+            <div class="range">₹50,000 – ₹70,000</div>
+            <div class="label">Per kW benchmark</div>
+          </div>
+          <div class="ind-card">
+            <div class="kw">5 kW</div>
+            <div class="range">₹2,50,000 – ₹3,50,000</div>
+            <div class="label">Typical commercial size</div>
+          </div>
+          <div class="ind-card">
+            <div class="kw">10 kW</div>
+            <div class="range">₹5,00,000 – ₹7,00,000</div>
+            <div class="label">Medium industrial</div>
+          </div>
+        </div>
+        <p class="pricing-note">
+          <i class="fas fa-info-circle"></i> Larger multi-MW projects are quoted on request after detailed site evaluation. Prices vary based on module type, structure, inverter and civil works.
+        </p>
+      </div>
+
+      <!-- Hybrid -->
+      <div class="tab-content" id="hybrid">
+        <div class="hybrid-box">
+          <h4><i class="fas fa-wind"></i> Standalone Wind & Solar-Wind Hybrid Systems</h4>
+          <p>Residential wind-only setups are rare in urban Madurai rooftops due to low wind profiles. Combined small hybrid systems (solar + micro-wind) or commercial hybrid packages require bespoke site evaluations.</p>
+          <p><span class="start-price">Starting from ₹1,20,000+</span></p>
+          <p>Depends on battery storage capacity and turbine size. Larger commercial / industrial hybrid setups are quoted on request through our engineering team.</p>
+          <a href="https://wa.me/918015649004?text=Hi%20PK%20Industry%2C%20I%20need%20a%20hybrid%20system%20quote" class="btn btn-primary" style="margin-top:1rem;">
+            <i class="fab fa-whatsapp"></i> Request Custom Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Why Choose Us</div>
+        <h2>The PK Industry Advantage</h2>
+        <p>We make clean energy simple, affordable and reliable for every customer.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+          <h3>Maximum Subsidy Benefit</h3>
+          <p>We handle the complete PM Surya Ghar + Tamil Nadu state subsidy process so you pay the lowest possible amount.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>Custom Design</h3>
+          <p>Every system is designed after a free site survey considering your bill, roof space and energy needs.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Quality Guarantee</h3>
+          <p>Only Tier-1 solar modules, reputed inverters and ISI-marked structures with strong warranties.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+          <h3>End-to-End Service</h3>
+          <p>From paperwork and installation to net-metering and annual maintenance — we take care of everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Switch to Solar?</h2>
+      <p>Share your average monthly electricity bill and rooftop area. We’ll calculate the ideal system size and ROI for your property in Madurai / Tamil Nadu.</p>
+      <a href="https://wa.me/918015649004?text=Hi%20PK%20Industry%2C%20I%20want%20to%20know%20my%20solar%20system%20size%20and%20ROI" class="btn btn-primary">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp Now
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Get In Touch</div>
+        <h2>Contact Us</h2>
+        <p>Have questions or ready for a free site survey? Reach out today.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let’s Power Your Property</h3>
+          <p>Fill the form or message us directly on WhatsApp for the fastest response. Our team usually replies within minutes during business hours.</p>
+          <div class="contact-item">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Madurai, Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <p>+918015649004</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>vishunuprabhu@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="quoteForm" onsubmit="return handleForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" name="name" required placeholder="Full name" />
+              </div>
+              <div class="form-group">
+                <label>Phone / WhatsApp *</label>
+                <input type="tel" name="phone" required placeholder="10-digit number" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Optional" />
+            </div>
+            <div class="form-group">
+              <label>Interested In</label>
+              <select name="interest">
+                <option value="Residential Solar">Residential Solar Rooftop</option>
+                <option value="Industrial Solar">Industrial / Commercial Solar</option>
+                <option value="Wind">Wind System</option>
+                <option value="Hybrid">Solar-Wind Hybrid</option>
+                <option value="Other">Other / General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Monthly Bill / Message</label>
+              <textarea name="message" rows="3" placeholder="Average monthly bill (₹ or units) and available roof space if known"></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <i class="fas fa-paper-plane"></i> Send Enquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <i class="fas fa-solar-panel"></i>
+            PK <span style="color:var(--primary-light)">INDUSTRY</span>
+          </a>
+          <p>Leading provider of Solar Rooftop, Industrial Solar, Wind & Hybrid energy solutions in Tamil Nadu.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918015649004"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Residential Solar</a></li>
+            <li><a href="#services">Industrial Solar</a></li>
+            <li><a href="#services">Wind Systems</a></li>
+            <li><a href="#services">Hybrid Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Free Site Survey</a></li>
+            <li><a href="#pricing">Subsidy Info</a></li>
+            <li><a href="https://wa.me/918015649004">WhatsApp Chat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 PK Industry Pvt. Ltd. All rights reserved. | Solar & Wind Energy Solutions – Madurai, Tamil Nadu
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+  <a href="https://wa.me/9180115649004?text=Hi%20PK%20Industry%2C%20I%20would%20like%20to%20know%20more%20about%20your%20solar%20%26%20wind%20solutions" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-text">Chat with us</span>
+  </a>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Pricing tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Form handler → redirect to WhatsApp with filled data
+    function handleForm(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value.trim();
+      const phone = form.phone.value.trim();
+      const email = form.email.value.trim();
+      const interest = form.interest.value;
+      const message = form.message.value.trim();
+
+      let text = `Hi PK Industry,%0A%0A*New Enquiry*%0AName: ${name}%0APhone: ${phone}`;
+      if (email) text += `%0AEmail: ${email}`;
+      text += `%0AInterested In: ${interest}`;
+      if (message) text += `%0AMessage: ${message}`;
+
+      window.open(`https://wa.me/918015649004?text=${text}`, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
